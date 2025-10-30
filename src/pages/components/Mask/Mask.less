@@ -1,0 +1,31 @@
+.mask {
+  position: relative;
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  cursor: default;
+
+  .header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 40px;
+    padding-bottom: 10px;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

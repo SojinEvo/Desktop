@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  height: 6%;
+  background: rgb(23, 23, 23);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 1001;
+  box-sizing: border-box;
+
+  .footer-content {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+    .startMenu i {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      background-image: url("@/assets/startMenu.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .startMenu:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .workspace {
+      max-width: 80%;
+      margin-left: 10px;
+      display: flex;
+      width: auto;
+      gap: 10px;
+      overflow-x: auto;
+    }
+    .workspace i:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .tool {
+      max-width: 10%;
+      width: auto;
+      position: absolute;
+      right: 10px;
+      color: #fff;
+      overflow-x: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+    }
+  }
+}
